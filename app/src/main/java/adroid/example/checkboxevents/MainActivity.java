@@ -9,7 +9,7 @@ import android.widget.TextView;
 import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
-    ArrayList<String> selection = new ArrayList<String>();
+    ArrayList<String> selection = new ArrayList<>();
     TextView final_text;
 
     @Override
@@ -50,13 +50,11 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void finalSelection(View view) {
-
         String final_fruit_selection = "";
         for (String Selections : selection) {
             final_fruit_selection = final_fruit_selection + Selections + "\n";
         }
         final_text.setText(final_fruit_selection);
         final_text.setEnabled(true);
-
     }
 }
